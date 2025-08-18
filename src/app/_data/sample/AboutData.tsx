@@ -1,4 +1,6 @@
-export const CompanyData = {
+export const AboutData = {
+    intro:`We are expert partner in Agriculture, Services, Hotels And Hospitality, Real Estate, 
+    Mining & Telecommunication.`,
     title: "Company Culture",
     desc: `Culture is an essential aspect of any organization. Swetang believes that the 
     workplace must be conducive to shared work, free from abuse, and foster an atmosphere 

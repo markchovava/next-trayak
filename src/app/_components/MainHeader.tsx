@@ -3,6 +3,7 @@ import BannerBgVideo from './BannerBgVideo'
 import MainNavigation from './MainNavigation'
 import Link from 'next/link'
 import ButtonSecondary from './buttons/ButtonSecondary'
+import { AboutData} from '../_data/sample/AboutData'
 
 
 
@@ -20,8 +21,8 @@ export default function MainHeader() {
         <MainNavigation />
         <div className="w-full flex-grow">
           <div className="mx-auto w-[92%] h-[100%] flex flex-col justify-center items-start">
-            <h3 className="text-gray-200 leading-tight font-medium text-[2.1rem] lg:w-[50%] w-[55%] mb-6">
-              We are expert partner in Agriculture, Mining & Telecommunication.
+            <h3 className="text-gray-200 leading-tight font-medium text-[2.1rem] lg:w-[60%] w-[65%] mb-6">
+              {AboutData.intro}
             </h3>
            
               <Link href="#">

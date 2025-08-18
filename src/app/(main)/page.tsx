@@ -7,7 +7,6 @@ import GridRightTwo from "../_components/grid/GridRightTwo";
 import GridThree from "../_components/grid/GridThree";
 import { H1, H2, H2Black, H3 } from "../_components/Headings";
 import MainHeader from "../_components/MainHeader";
-import { CompanyData } from "../_data/sample/AboutData";
 import { CeoData } from "../_data/sample/CeoData";
 import { ServicesData } from "../_data/sample/ServicesData";
 
