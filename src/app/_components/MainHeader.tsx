@@ -25,7 +25,7 @@ export default function MainHeader() {
               {AboutData.intro}
             </h3>
            
-              <Link href="#">
+              <Link href="/contact">
                 <ButtonSecondary
                   title="Talk to us" 
                   css="py-3 px-5 rounded-full hover:drop-shadow-lg w-[10rem]" />
