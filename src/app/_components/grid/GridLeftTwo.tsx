@@ -1,7 +1,8 @@
 import React from 'react'
 import { H1 } from '../Headings'
+import Image from 'next/image'
 
-export default function GridLeftTwo({title, desc}: {title: string, desc: string}) {
+export default function GridLeftTwo({title, desc, img}: {title: string, desc: string, img: string}) {
   return (
     <>
     <section className="w-full pb-[6rem]">
@@ -12,7 +13,9 @@ export default function GridLeftTwo({title, desc}: {title: string, desc: string}
             {desc}
           </p>
         </div>
-        <div className="h-full w-full bg-gray-400"></div>
+         <div className="h-full w-full bg-gray-400 overflow-hidden">
+            <Image src={img} width={800} height={400} alt="" className="w-full h-full object-cover" />
+          </div>
       </div>
     </section>
     </>

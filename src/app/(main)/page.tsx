@@ -5,9 +5,10 @@ import Footer from "../_components/Footer";
 import GridLeftTwo from "../_components/grid/GridLeftTwo";
 import GridRightTwo from "../_components/grid/GridRightTwo";
 import GridThree from "../_components/grid/GridThree";
-import { H1, H2Black, H3 } from "../_components/Headings";
+import { H1, H2, H2Black, H3 } from "../_components/Headings";
 import MainHeader from "../_components/MainHeader";
 import { CompanyData } from "../_data/sample/AboutData";
+import { CeoData } from "../_data/sample/CeoData";
 import { ServicesData } from "../_data/sample/ServicesData";
 
 
@@ -22,18 +23,18 @@ export default function Home() {
 
     <FadeSlideIn slideDirection="up" duration={1500}>
       <section className="pb-[6rem]">
-        <div className="mx-auto w-[70%] flex flex-col gap-2">
+        <div className="mx-auto w-[70%] flex flex-col gap-2 text-2xl">
           <H1 title="Welcome to Trayak Consultancy" />
-          <p className="font-light text-2xl ">
-          Trayak Consultancy (Private) Limited is a private limited liability 
-          company incorporated and based in Zimbabwe whose mission and vision are to
-           drive business development, foster and facilitate key strategic business 
-           networks and collaboration within the AfrAsian markets. The company’s mission is: -
+          <p className="font-light mb-4">
+            Trayak Consultancy (Private) Limited is a private limited liability 
+            company incorporated and based in Zimbabwe whose mission and vision are to
+            drive business development, foster and facilitate key strategic business 
+            networks and collaboration within the AfrAsian markets. The company’s mission is: -
           </p>
-          <p className="px-[2rem] italic font-light text-2xl text-amber-600">
-          “To help all our clients and stakeholders in creating brands and businesses that 
-          can sustainably leverage on and maximumly utilise resources to best profit advantage 
-          in a socially sensitive and beneficial manner.”
+          <p className="mx-[2rem] px-4 italic font-light border-l-3 border-amber-500">
+            “To help all our clients and stakeholders in creating brands and businesses that 
+            can sustainably leverage on and maximumly utilise resources to best profit advantage 
+            in a socially sensitive and beneficial manner.”
           </p>
         </div>
       </section>
@@ -41,24 +42,77 @@ export default function Home() {
 
 
     <FadeSlideIn slideDirection="right" duration={1500}>
-      <GridRightTwo title={CompanyData.title} desc={CompanyData.desc} />
+        <GridRightTwo title={ServicesData[0].title} desc={ServicesData[0].desc} img={ServicesData[0].img} />
+    </FadeSlideIn>
+
+    <FadeSlideIn slideDirection="left" duration={1500}>
+        <GridLeftTwo title={ServicesData[1].title} desc={ServicesData[1].desc} img={ServicesData[1].img} />
+    </FadeSlideIn>
+
+      <FadeSlideIn slideDirection="right" duration={1500}>
+        <GridRightTwo title={ServicesData[2].title} desc={ServicesData[2].desc} img={ServicesData[2].img} />
+    </FadeSlideIn>
+
+    <FadeSlideIn slideDirection="left" duration={1500}>
+        <GridLeftTwo title={ServicesData[3].title} desc={ServicesData[3].desc} img={ServicesData[3].img} />
+    </FadeSlideIn>
+
+    <FadeSlideIn slideDirection="right" duration={1500}>
+        <GridRightTwo title={ServicesData[4].title} desc={ServicesData[4].desc} img={ServicesData[4].img} />
     </FadeSlideIn>
 
 
-    <FadeSlideIn slideDirection="up" duration={1500}>
+    <section className='w-full bg-gray-950 pb-[6rem]'>
+      <div className='h-[6rem] w-full' />
+      <div className='flex flex-col justify-center items-center'>
+          <H3 title="About Swetang Sinha" />
+          <div className="h-[1rem]" />
+          <H2 title="CEO of Trayak Consultancy (Pvt) Ltd" color="text-gray-200" />
+      </div>
+      <div className="h-[2rem]" />
+      <FadeSlideIn slideDirection="right" duration={1500}>
+          <section className='mx-auto w-[70%] text-xl font-light text-gray-200 '>
+              {CeoData.bio}
+          </section>
+      </FadeSlideIn>
+
+  </section>
+
+
+  <section className='w-full bg-gray-50 pb-[6rem]'>
+      <div className='h-[6rem] w-full' />
+      <div className='flex flex-col justify-center items-center'>
+          <H3 title="About Swetang Sinha" />
+          <div className="h-[1rem]" />
+          <H2 title="A different worldview of a changing world." color="text-gray-900" />
+      </div>
+      <div className="h-[2rem]" />
+      <FadeSlideIn slideDirection="left" duration={1500}>
+          <section className='mx-auto w-[70%] text-xl font-light text-gray-900 '>
+              {CeoData.worldView}
+          </section>
+      </FadeSlideIn>
+
+  </section>
+
+
+
+
+   {/*  <FadeSlideIn slideDirection="right" duration={1500}>
+      <GridRightTwo title={CompanyData.title} desc={CompanyData.desc} />
+    </FadeSlideIn> */}
+
+
+   {/*  <FadeSlideIn slideDirection="up" duration={1500}>
       <section className="bg-black pt-[6rem] pb-[6rem]">
         <div className="mx-auto w-[92%]">
           <Carousel1 title="Trayak's sectoral coverage" />
         </div>
       </section>
       <div className="h-[6rem]" />
-    </FadeSlideIn>
-    
+    </FadeSlideIn> */}
 
-    
-
-
-    <FadeSlideIn slideDirection="up" duration={1500}>
+   {/*  <FadeSlideIn slideDirection="up" duration={1500}>
       <section>
         <div className="flex flex-col justify-center items-center">
           <H3 title="News" />
@@ -75,7 +129,7 @@ export default function Home() {
         </div>
       </section>
       <div className="h-[6rem]" />
-    </FadeSlideIn>
+    </FadeSlideIn> */}
 
    
 

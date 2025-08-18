@@ -39,23 +39,23 @@ export default function page() {
 
 
         <FadeSlideIn slideDirection="right" duration={1500}>
-            <GridRightTwo title={ServicesData[0].title} desc={ServicesData[0].desc} />
+            <GridRightTwo title={ServicesData[0].title} desc={ServicesData[0].desc} img={ServicesData[0].img} />
         </FadeSlideIn>
 
         <FadeSlideIn slideDirection="left" duration={1500}>
-            <GridLeftTwo title={ServicesData[1].title} desc={ServicesData[1].desc} />
+            <GridLeftTwo title={ServicesData[1].title} desc={ServicesData[1].desc} img={ServicesData[1].img} />
         </FadeSlideIn>
 
-         <FadeSlideIn slideDirection="right" duration={1500}>
-            <GridRightTwo title={ServicesData[2].title} desc={ServicesData[2].desc} />
+            <FadeSlideIn slideDirection="right" duration={1500}>
+            <GridRightTwo title={ServicesData[2].title} desc={ServicesData[2].desc} img={ServicesData[2].img} />
         </FadeSlideIn>
 
         <FadeSlideIn slideDirection="left" duration={1500}>
-            <GridLeftTwo title={ServicesData[3].title} desc={ServicesData[3].desc} />
+            <GridLeftTwo title={ServicesData[3].title} desc={ServicesData[3].desc} img={ServicesData[3].img} />
         </FadeSlideIn>
 
         <FadeSlideIn slideDirection="right" duration={1500}>
-            <GridRightTwo title={ServicesData[4].title} desc={ServicesData[4].desc} />
+            <GridRightTwo title={ServicesData[4].title} desc={ServicesData[4].desc} img={ServicesData[4].img} />
         </FadeSlideIn>
 
         <section className='w-full bg-gray-950 pb-[6rem]'>

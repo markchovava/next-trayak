@@ -11,7 +11,8 @@ export const ServicesData = [
         community based Agricultural initiative aimed at empowering rural communities in Zambia 
         to pool resources together in a sheep rearing venture and sully mutton to a secured and 
         guaranteed offtaker. The project is aimed at improving the livelihoods of rural 
-        communities while creating the much-needed employment for the youth.`
+        communities while creating the much-needed employment for the youth.`,
+        img: "/assets/img/01.jpg"
     },
     {
         id: 2, 
@@ -21,6 +22,7 @@ export const ServicesData = [
         services starts from concept formulation through to inception, execution and 
         commissioning. To date Trayak has helped a Safari entity in Uganda to set up, procure 
         licensing and operationalise its business.`,
+        img: "/assets/img/02.jpg"
     },
     {
         id: 3, 
@@ -31,6 +33,7 @@ export const ServicesData = [
         Trayak helped secure funding for the client and undertook a restructuring exercise which saw the 
         company turning its fortunes around. In South Africa, the company also advised a real estate entity 
         and helped it increase its market share. `,
+        img: "/assets/img/03.jpg"
     },
     {
         id: 4, 
@@ -39,12 +42,14 @@ export const ServicesData = [
         mining and extraction best practices. In Zimbabwe, the company advised an entity hugely indebted to the 
         tax authorities and helped it extricate itself from the taxman’s noose. The company is also involved in 
         market scouting and for mining produce as well as negotiation for finance facilities for its clients. `,
+        img: "/assets/img/05.jpg"
     },
     {
         id: 5, 
         title: "Real Estate Management", 
         desc: `In its real estate client portfolio, Trayak boasts of more than 10 real estate clients across 6 
         countries and is currently negotiating for a property developer wishing to construct a shopping mall in Malawi.`,
+        img: "/assets/img/04.jpg"
     },
 
 ]
