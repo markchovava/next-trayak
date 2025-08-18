@@ -63,7 +63,7 @@ export default function Home() {
     <FadeSlideIn slideDirection="up" duration={1500}>
       <section className="bg-gray-900 pt-[6rem] pb-[6rem]">
         <div className="mx-auto w-[92%]">
-          <Carousel1 title="Yesy" />
+          <Carousel1 title="Trayak’s sectoral coverage" />
         </div>
       </section>
       <div className="h-[6rem]" />

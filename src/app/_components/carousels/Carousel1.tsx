@@ -9,8 +9,10 @@ import { GoDotFill, GoDot } from "react-icons/go";
 // Import Swiper styles
 import 'swiper/swiper-bundle.css';
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
-import Image from 'next/image';
 import { H1 } from '../Headings';
+import { ServicesData } from '@/app/_data/sample/ServicesData';
+
+
 
 
 export default function Carousel1({ title }: { title: string }) {
@@ -104,16 +106,14 @@ export default function Carousel1({ title }: { title: string }) {
           pagination={false}
           className="mb-6"
         >
-          {[...Array(8)].map((i, key) => (
+          {ServicesData.map((i, key) => (
             <SwiperSlide key={key} className='py-4 px-3'>
               <section className='w-full cursor-pointer group relative h-[25rem] overflow-hidden rounded-2xl drop-shadow hover:drop-shadow-lg'>
                 <div className="mx-auto w-[100%] h-[100%] rounded-2xl overflow-hidden grid lg:grid-cols-2 grid-cols-1 bg-white drop-shadow-lg">
                     <div className="h-full w-full flex flex-col items-start justify-center gap-3 px-6 py-8">
-                        <H1 title="Lorem ipsum dolor sit amet." />
+                        <H1 title={i.title} />
                         <p className="text-lg font-light">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat rem, ducimus 
-                        laudantium quas molestiae maiores atque totam mollitia, est accusantium illo 
-                        veniam architecto quidem perspiciatis! Assumenda voluptatibus eveniet beatae libero?
+                        {i.desc}
                         </p>
                     </div>
                     <div className="h-full w-full bg-gray-400"></div>
