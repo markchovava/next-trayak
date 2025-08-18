@@ -48,8 +48,9 @@ export const ServicesData = [
         id: 5, 
         title: "Real Estate Management", 
         desc: `In its real estate client portfolio, Trayak boasts of more than 10 real estate clients across 6 
-        countries and is currently negotiating for a property developer wishing to construct a shopping mall in Malawi.`,
-        img: "/assets/img/04.jpg"
+        countries and is currently negotiating for a property developer wishing to construct a 
+        shopping mall in Malawi.`,
+        img: "/assets/img/04.jpg",
     },
 
 ]
