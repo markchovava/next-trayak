@@ -50,7 +50,7 @@ export default function BannerBgVideo({
     }
 
     return (
-        <div className={`absolute z-[5] top-0 left-0 w-full h-full overflow-hidden ${className}`}>
+        <div className={`absolute z-[5] top-0 left-0 w-full h-[100%] overflow-hidden ${className}`}>
             {isLoading && poster && (
                 <img 
                     src={poster}

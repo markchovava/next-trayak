@@ -7,3 +7,20 @@ export const NavLinksData: MainNavItemInterface[] = [
   {id: 3, title: "Our Solutions", css: "hover:text-amber-400", href:"#solution", hasDropdown: true},
   {id: 4, title: "Insight & News", css: "hover:text-amber-400", href:"#news", hasDropdown: false},
 ]
+
+
+
+export const FooterLinksData: MainNavItemInterface[] = [
+  {id: 1, title: "Home", href:"#", hasDropdown: false},
+  {id: 2, title: "About Us", href:"#about", hasDropdown: false},
+  {id: 3, title: "Our Solutions", href:"#solution", hasDropdown: false},
+  {id: 4, title: "Insight & News", href:"#news", hasDropdown: false},
+]
+
+
+export const SocialLinksData = [
+  {id: 1, name: "Facebook", href:"#"},
+  {id: 1, name: "LinkedIn", href:"#"},
+  {id: 1, name: "Instagram", href:"#"},
+  {id: 1, name: "Twitter", href:"#"},
+]

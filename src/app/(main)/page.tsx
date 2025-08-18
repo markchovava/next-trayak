@@ -1,12 +1,11 @@
-import Link from "next/link";
-import BannerBgVideo from "../_components/BannerBgVideo";
-import MainNavItem from "../_components/links/MainNavItem";
-import { NavLinksData } from "../_data/sample/NavData";
-import Logo from "../_components/Logo";
-import { LogoData } from "../_data/sample/LogoData";
-import ButtonPrimary from "../_components/buttons/ButtonPrimary";
 import ButtonSecondary from "../_components/buttons/ButtonSecondary";
-import MainNavigation from "../_components/MainNavigation";
+import Carousel1 from "../_components/carousels/Carousel1";
+import Footer from "../_components/Footer";
+import GridLeftTwo from "../_components/grid/GridLeftTwo";
+import GridRightTwo from "../_components/grid/GridRightTwo";
+import GridThree from "../_components/grid/GridThree";
+import { H1, H2Black, H3 } from "../_components/Headings";
+import MainHeader from "../_components/MainHeader";
 
 
 
@@ -15,33 +14,49 @@ import MainNavigation from "../_components/MainNavigation";
 export default function Home() {
   return (
     <>
-    <header className="w-full relative lg:h-[100vh] h-[30rem] bg-black">
-      <BannerBgVideo
-        src="/assets/videos/slide.mp4"
-        poster="/assets/img/slide.jpg" // Optional
-      />
-      <section className="absolute w-full h-full z-10 bg-gradient-to-r from-black to-transparent opacity-70"></section>
-      <section className="absolute top-0 left-0 z-20 w-full h-full flex flex-col items-start justify-start">
-        {/* NAVIGATION */}
-        <MainNavigation />
-        <div className="w-full flex-grow">
-          <div className="mx-auto w-[92%] h-[100%] flex flex-col justify-center items-start">
-            <h3 className="text-gray-200 leading-tight font-medium text-[2.1rem] lg:w-[50%] w-[55%] mb-6">
-              We are expert partner in Agriculture, Mining & Telecommunication.
-            </h3>
-            <Link href="">
-              <Link href="#">
-                <ButtonSecondary 
-                  title="Talk to us" 
-                  css="py-3 px-5 hover:drop-shadow-lg w-[10rem]" />
-              </Link>
-            </Link>
-          </div>
-        </div>
-      </section>
+    <MainHeader />
+    <div className="h-[6rem]" />
+    
+    <section className="pb-[6rem]">
+      <div className="mx-auto w-[70%] flex flex-col gap-2">
+        <H1 title="Lorem ipsum dolor sit amet." />
+        <p className="font-light text-2xl ">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, eveniet a minus quae mollitia, 
+        laborum autem reiciendis eaque quisquam itaque nulla dolor minima soluta deserunt veritatis voluptas 
+        accusamus, quidem illo.
+        </p>
+      </div>
+    </section>
 
-      
-    </header>
+    <GridRightTwo />
+
+    <GridLeftTwo />
+
+    <section>
+      <div className="flex flex-col justify-center items-center">
+        <H3 title="News" />
+        <div className="h-[1rem]" />
+        <H2Black title="Recent News & Insight" />
+        <div className="h-[2rem]" />
+        <GridThree />
+        <div className="h-[2rem]" />
+          <div className="flex items-center justify-center">
+            <ButtonSecondary
+              title="Talk to us" 
+              css="py-4 px-6 rounded-full hover:drop-shadow-lg w-[12rem]" />
+          </div>
+      </div>
+    </section>
+    <div className="h-[6rem]" />
+
+    <section className="bg-gray-900 pt-[6rem] pb-[6rem]">
+      <div className="mx-auto w-[92%]">
+        <Carousel1 title="Yesy" />
+      </div>
+    </section>
+
+
+    <Footer />
     </>
   );
 }
