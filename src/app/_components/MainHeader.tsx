@@ -14,7 +14,7 @@ export default function MainHeader() {
         src="/assets/videos/slide.mp4"
         poster="/assets/img/slide.jpg" // Optional
       />
-      <section className="absolute w-full h-full z-10 bg-gradient-to-r from-black to-transparent opacity-70"></section>
+      <section className="absolute top-0 left-0 w-full h-full z-10 bg-gradient-to-r from-black to-transparent opacity-70"></section>
       <section className="absolute top-0 left-0 z-20 w-full h-full flex flex-col items-start justify-start">
         {/* NAVIGATION */}
         <MainNavigation />

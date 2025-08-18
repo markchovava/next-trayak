@@ -79,4 +79,5 @@ export default function BannerBgVideo({
             />
         </div>
     );
+    
 }

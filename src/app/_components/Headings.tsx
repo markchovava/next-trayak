@@ -9,10 +9,10 @@ export function H1({title} : {title: string}) {
 } 
 
 
-export function H2({title} : {title: string}) {
+export function H2({title, color=""} : {title: string, color: string}) {
     return (
         <>
-        <h1 className="text-[2rem] text-amber-500 font-medium leading-tight">
+        <h1 className={`text-[2rem] uppercase ${color} font-medium leading-tight`}>
           {title}
         </h1>
         </>
@@ -33,7 +33,18 @@ export function H2Black({title} : {title: string}) {
 export function H3({title} : {title: string}) {
     return (
         <>
-        <h1 className="text-xl text-amber-500 font-medium leading-tight">
+        <h1 className="text-xl uppercase text-amber-500 font-medium leading-tight">
+          {title}
+        </h1>
+        </>
+    )
+} 
+
+
+export function H4({title} : {title: string}) {
+    return (
+        <>
+        <h1 className="text-2xl text-amber-500 font-medium leading-tight">
           {title}
         </h1>
         </>

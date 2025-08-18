@@ -20,7 +20,7 @@ export default function MainNavigation() {
               <MainNavItem key={key} i={i} css="hover:text-amber-300" />
             )) }
           </ul>
-          <Link href="#">
+          <Link href="/pdf">
             <ButtonPrimary 
               title="Download Guide" 
               css="py-3 px-5 hover:drop-shadow-lg" />
