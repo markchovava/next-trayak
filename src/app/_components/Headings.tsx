@@ -12,7 +12,7 @@ export function H1({title} : {title: string}) {
 export function H2({title, color=""} : {title: string, color: string}) {
     return (
         <>
-        <h1 className={`px-4 text-[2rem] ${color} font-medium leading-tight`}>
+        <h1 className={`lg:px-0 px-4 text-[2rem] ${color} font-medium leading-tight`}>
           {title}
         </h1>
         </>
@@ -22,7 +22,7 @@ export function H2({title, color=""} : {title: string, color: string}) {
 export function H2Black({title} : {title: string}) {
     return (
         <>
-        <h1 className="px-4 text-[2rem] text-black font-bold leading-tight">
+        <h1 className="lg:px-0 px-4 text-[2rem] text-black font-bold leading-tight">
           {title}
         </h1>
         </>
