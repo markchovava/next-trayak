@@ -18,7 +18,7 @@ export default function page() {
     <>
     <MainHeaderSecondary 
         title='Contact Us'
-        img='/assets/img/banner/04.jpg'
+        img='/assets/img/02.jpg'
         intro="Talk to us, we would like to hear from you." />
     
     <div className='h-[7rem] w-full' />

@@ -1,7 +1,6 @@
 "use client"
 import { useState } from 'react';
 import Video from 'next-video';
-import Image from 'next/image';
 
 interface BgVideoInterface {
     src: string;
@@ -51,12 +50,9 @@ export default function BannerBgVideo_old({
     }
 
     return (
-        <>
-        <div className={`hidden lg:block absolute z-[5] top-0 left-0 w-full h-[100%] overflow-hidden ${className}`}>
+        <div className={`absolute z-[5] top-0 left-0 w-full h-[100%] overflow-hidden ${className}`}>
             {isLoading && poster && (
-                <Image
-                    width={1000}
-                    height={500} 
+                <img 
                     src={poster}
                     alt="Video poster"
                     className="w-full h-full object-cover object-center"
@@ -82,17 +78,6 @@ export default function BannerBgVideo_old({
                 }}
             />
         </div>
-
-        <div className={`lg:hidden block absolute z-[5] top-0 left-0 w-full h-[100%] overflow-hidden ${className}`}>
-            <Image
-                    width={1000}
-                    height={500} 
-                    src={poster}
-                    alt="Video poster"
-                    className="w-full h-full object-cover object-center"
-                />
-        </div>
-        </>
     );
     
 }
