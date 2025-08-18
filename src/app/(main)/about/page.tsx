@@ -28,7 +28,7 @@ export default function page() {
                 drive business development, foster and facilitate key strategic business 
                 networks and collaboration within the AfrAsian markets. The company’s mission is: -
                 </p>
-                <p className="px-[2rem] italic font-light text-2xl text-amber-600">
+                <p className="px-[2rem] italic font-light text-2xl border-l-3 border-amber-400">
                 “To help all our clients and stakeholders in creating brands and businesses that 
                 can sustainably leverage on and maximumly utilise resources to best profit advantage 
                 in a socially sensitive and beneficial manner.”
@@ -55,7 +55,7 @@ export default function page() {
         </FadeSlideIn>
 
         <FadeSlideIn slideDirection="right" duration={1500}>
-            <GridLeftTwo title={ServicesData[4].title} desc={ServicesData[4].desc} />
+            <GridRightTwo title={ServicesData[4].title} desc={ServicesData[4].desc} />
         </FadeSlideIn>
 
         <section className='w-full bg-gray-950 pb-[6rem]'>
@@ -79,12 +79,12 @@ export default function page() {
             <div className='flex flex-col justify-center items-center'>
                 <H3 title="About Swetang Sinha" />
                 <div className="h-[1rem]" />
-                <H2 title="CEO of Trayak Consultancy (Pvt) Ltd" color="text-gray-200" />
+                <H2 title="A different worldview of a changing world." color="text-gray-900" />
             </div>
             <div className="h-[2rem]" />
-            <FadeSlideIn slideDirection="right" duration={1500}>
+            <FadeSlideIn slideDirection="left" duration={1500}>
                 <section className='mx-auto w-[70%] text-xl font-light text-gray-900 '>
-                    {CeoData.bio}
+                    {CeoData.worldView}
                 </section>
             </FadeSlideIn>
 

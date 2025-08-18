@@ -36,5 +36,41 @@ export const CeoData = {
                 Swetang Sinha
             </p>
         </div>,
-    worldView: <div className="flex flex-col gap-6"></div>
+    worldView: <div className="flex flex-col gap-6">
+        <p>
+            A statement that has almost become a cliche is that opportunities are hidden in problems. What you do is 
+            informed by how you see. For Swetang, problems are the first sign of opportunity, and it is up to one to 
+            choose to see the problem or the opportunity. Swetang's business philosophy and value proposition to his 
+            clients lies in helping them see the opportunity within the problem and helping them create value out of it. 
+            To Swetang's dictates, this value creation has got to be anchored in social empowerment of communities, otherwise 
+            the business of promoting self-interest to the exclusion of people interest is no business at all. 
+        </p>
+        <p className="mx-[3rem] italic border-l-3 border-amber-400 pl-4 py-4">
+            Our approach is different. Our approach draws from the philosophy propounded by Sir Richard Branson in his seminal book, 
+            “Screw Business as usual.” There is immense opportunity to do business differently to empower communities - Swetang Sinha
+        </p>
+        <p>
+            According to Swetang, the days of defending shareholder interest to the exclusion of other key stakeholders like 
+            customers, and society at large are over for any serious and well-meaning business. Businesses have got to innovate 
+            around win-win solutions which while giving them profit also empowers their communities and society at large.  
+        </p>
+    </div>,
+    family: <div></div>,
+    leadership: <div>
+        <p>
+            Swetang Sinha defines himself as a “transformative leader”. He holds the view that any leadership regime should 
+            by extension be able to transform the lives of all its stakeholders in a positive way and set an example by improving 
+            the people under its influence. Swetang has learnt the value of this leadership style first-hand from the eminent 
+            Professor Dr. Kumra at IIM Lucknow. Swetang was impressed with this selfless leadership style and demonstrated how 
+            it unlocks the best potentials in people.
+        </p>
+        <p>
+            For Swetang, leadership is not a position but a role. He posits that leaders are a convenience of history, 
+            needed to responsibly drive ahead society into a sustainable future. In his book, leadership equals responsibility 
+            and therefore leaders ought to be accountable first to their conscience and then to the people they lead,
+        </p> 
+         
+
+    </div>
+
 }
