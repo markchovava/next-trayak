@@ -64,9 +64,9 @@ export default function Home() {
     <section className='w-full bg-gray-950 pb-[6rem]'>
       <div className='h-[6rem] w-full' />
       <div className='flex flex-col justify-center items-center'>
-          <H3 title="About Swetang Sinha" />
-          <div className="h-[1rem]" />
-          <H2 title="CEO of Trayak Consultancy (Pvt) Ltd" color="text-gray-200" />
+          {/* <H3 title="About Swetang Sinha" />
+          <div className="h-[1rem]" /> */}
+          <H2 title="CEO of Trayak Consultancy (Pvt) Ltd" color="text-amber-500" />
       </div>
       <div className="h-[2rem]" />
       <FadeSlideIn slideDirection="right" duration={1500}>
@@ -81,9 +81,7 @@ export default function Home() {
   <section className='w-full bg-gray-50 pb-[6rem]'>
       <div className='h-[6rem] w-full' />
       <div className='flex flex-col justify-center items-center'>
-          <H3 title="About Swetang Sinha" />
-          <div className="h-[1rem]" />
-          <H2 title="A different worldview of a changing world." color="text-gray-900" />
+          <H2 title="A different worldview of a changing world." color="text-amber-500" />
       </div>
       <div className="h-[2rem]" />
       <FadeSlideIn slideDirection="left" duration={1500}>
