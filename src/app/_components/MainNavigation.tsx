@@ -11,7 +11,7 @@ import ButtonPrimary from './buttons/ButtonPrimary'
 export default function MainNavigation() {
   return (
     <>
-    <div className="mx-auto w-[92%] flex items-center justify-between gap-4 pt-4 pb-3">
+    <div className="mx-auto w-[92%] flex lg:flex-row flex-col items-center lg:justify-between justify-center gap-4 pt-4 pb-3">
           <Logo 
             name="TRAYAK" 
             href="/"  />

@@ -10,7 +10,7 @@ import { AboutData} from '../_data/sample/AboutData'
 export default function MainHeader() {
   return (
     <>
-    <header className="w-full relative lg:h-[100vh] h-[30rem] bg-black">
+    <header className="w-full relative lg:h-[100vh] h-[40rem] bg-black">
       <BannerBgVideo
         src="/assets/videos/slide.mp4"
         poster="/assets/img/slide.jpg" // Optional
@@ -21,7 +21,7 @@ export default function MainHeader() {
         <MainNavigation />
         <div className="w-full flex-grow">
           <div className="mx-auto w-[92%] h-[100%] flex flex-col justify-center items-start">
-            <h3 className="text-gray-200 leading-tight font-medium text-[2.1rem] lg:w-[60%] w-[65%] mb-6">
+            <h3 className="text-gray-200 leading-tight font-medium lg:text-[2.1rem] text-[1.8rem] lg:w-[60%] w-[65%] mb-6">
               {AboutData.intro}
             </h3>
            
