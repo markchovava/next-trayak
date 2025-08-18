@@ -7,6 +7,7 @@ import GridRightTwo from "../_components/grid/GridRightTwo";
 import GridThree from "../_components/grid/GridThree";
 import { H1, H2Black, H3 } from "../_components/Headings";
 import MainHeader from "../_components/MainHeader";
+import { CompanyData } from "../_data/sample/AboutData";
 import { ServicesData } from "../_data/sample/ServicesData";
 
 
@@ -37,37 +38,24 @@ export default function Home() {
         </div>
       </section>
     </FadeSlideIn>
-    
 
-     <FadeSlideIn slideDirection="right" duration={1500}>
-      <GridRightTwo title={ServicesData[0].title} desc={ServicesData[0].desc} />
-     </FadeSlideIn>
-
-    <FadeSlideIn slideDirection="left" duration={1500}>
-      <GridLeftTwo title={ServicesData[1].title} desc={ServicesData[1].desc} />
-    </FadeSlideIn>
 
     <FadeSlideIn slideDirection="right" duration={1500}>
-      <GridRightTwo title={ServicesData[2].title} desc={ServicesData[2].desc} />
-    </FadeSlideIn>
-
-    <FadeSlideIn slideDirection="left" duration={1500}>
-      <GridLeftTwo title={ServicesData[3].title} desc={ServicesData[3].desc} />
-    </FadeSlideIn>
-
-    <FadeSlideIn slideDirection="right" duration={1500}>
-      <GridRightTwo title={ServicesData[4].title} desc={ServicesData[4].desc} />
+      <GridRightTwo title={CompanyData.title} desc={CompanyData.desc} />
     </FadeSlideIn>
 
 
     <FadeSlideIn slideDirection="up" duration={1500}>
-      <section className="bg-gray-900 pt-[6rem] pb-[6rem]">
+      <section className="bg-black pt-[6rem] pb-[6rem]">
         <div className="mx-auto w-[92%]">
-          <Carousel1 title="Trayak’s sectoral coverage" />
+          <Carousel1 title="Trayak's sectoral coverage" />
         </div>
       </section>
       <div className="h-[6rem]" />
     </FadeSlideIn>
+    
+
+    
 
 
     <FadeSlideIn slideDirection="up" duration={1500}>
