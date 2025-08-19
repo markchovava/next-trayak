@@ -4,6 +4,7 @@ import GridLeftTwo from '@/app/_components/grid/GridLeftTwo'
 import GridRightTwo from '@/app/_components/grid/GridRightTwo'
 import { H1, H2, H2Black, H3 } from '@/app/_components/Headings'
 import MainHeaderSecondary from '@/app/_components/MainHeaderSecondary'
+import { AboutData } from '@/app/_data/sample/AboutData'
 import { CeoData } from '@/app/_data/sample/CeoData'
 import { ServicesData } from '@/app/_data/sample/ServicesData'
 import React from 'react'
@@ -22,17 +23,7 @@ export default function page() {
             <section className="pb-[6rem]">
             <div className="mx-auto w-[70%] flex flex-col gap-2">
                 <H1 title="About Trayak Consultancy" />
-                <p className="font-light text-2xl ">
-                Trayak Consultancy (Private) Limited is a private limited liability 
-                company incorporated and based in Zimbabwe whose mission and vision are to
-                drive business development, foster and facilitate key strategic business 
-                networks and collaboration within the AfrAsian markets. The company’s mission is: -
-                </p>
-                <p className="px-[2rem] italic font-light text-2xl border-l-3 border-amber-400">
-                “To help all our clients and stakeholders in creating brands and businesses that 
-                can sustainably leverage on and maximumly utilise resources to best profit advantage 
-                in a socially sensitive and beneficial manner.”
-                </p>
+                {AboutData.aboutUs}
             </div>
             </section>
         </FadeSlideIn>

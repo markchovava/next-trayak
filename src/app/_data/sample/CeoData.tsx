@@ -45,7 +45,7 @@ export const CeoData = {
             To Swetang's dictates, this value creation has got to be anchored in social empowerment of communities, otherwise 
             the business of promoting self-interest to the exclusion of people interest is no business at all. 
         </p>
-        <p className="mx-[3rem] italic border-l-3 border-amber-400 pl-4 py-4">
+        <p className="mx-[2rem] italic border-l-3 border-amber-400 pl-4 py-4">
             Our approach is different. Our approach draws from the philosophy propounded by Sir Richard Branson in his seminal book, 
             “Screw Business as usual.” There is immense opportunity to do business differently to empower communities - Swetang Sinha
         </p>
@@ -55,7 +55,6 @@ export const CeoData = {
             around win-win solutions which while giving them profit also empowers their communities and society at large.  
         </p>
     </div>,
-    family: <div></div>,
     leadership: <div>
         <p>
             Swetang Sinha defines himself as a “transformative leader”. He holds the view that any leadership regime should 

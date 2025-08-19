@@ -1,7 +1,7 @@
 export function H1({title} : {title: string}) {
     return (
         <>
-        <h1 className="px-4 text-[2.2rem] text-amber-500 font-medium leading-tight">
+        <h1 className="lg:px-0 px-4 text-[2.2rem] text-amber-500 font-medium leading-tight">
           {title}
         </h1>
         </>
