@@ -40,7 +40,7 @@ export const ServicesData = [
         title:"Mining Industry", 
         desc: `The company has successfully consulted and advised mining clients regarding ESG and sustainable 
         mining and extraction best practices. In Zimbabwe, the company advised an entity hugely indebted to the 
-        tax authorities and helped it extricate itself from the taxman’s noose. The company is also involved in 
+        tax authorities and helped it extricate itself from the taxman's noose. The company is also involved in 
         market scouting and for mining produce as well as negotiation for finance facilities for its clients. `,
         img: "/assets/img/05.jpg"
     },
@@ -50,7 +50,7 @@ export const ServicesData = [
         desc: `In its real estate client portfolio, Trayak boasts of more than 10 real estate clients across 6 
         countries and is currently negotiating for a property developer wishing to construct a 
         shopping mall in Malawi.`,
-        img: "/assets/img/04.jpg",
+        img: "/assets/img/05.jpg"
     },
 
 ]
