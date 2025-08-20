@@ -1,3 +1,4 @@
+import Footer from '@/app/_components/Footer'
 import MainHeaderSecondary from '@/app/_components/MainHeaderSecondary'
 import React from 'react'
 
@@ -10,9 +11,9 @@ export default function page() {
             intro="We are expert partner in Agriculture, Mining & Telecommunication." />
 
         
+    <Footer />
 
 
-        
     </div>
   )
 }

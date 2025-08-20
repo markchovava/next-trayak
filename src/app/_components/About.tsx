@@ -61,7 +61,7 @@ export default function About() {
           <FadeSlideIn slideDirection="up" duration={1500}>
             <section className="bg-gray-950 py-[6rem]">
               <div className="mx-auto w-[80%]">
-                <Carousel1 title="Our Projects" />
+                <Carousel1 title="" />
               </div>
             </section>
           </FadeSlideIn>
