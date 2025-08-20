@@ -1,5 +1,5 @@
 import { JSX } from 'react'
-import { H1 } from '../Headings'
+import { H1, H2 } from '../Headings'
 import Image from 'next/image'
 
 export default function GridRightTwo({title, desc, img}: {title: string, desc: string | JSX.Element, img: string}) {
@@ -16,7 +16,7 @@ export default function GridRightTwo({title, desc, img}: {title: string, desc: s
             className="w-full h-full object-cover" />
         </div>
         <div className="h-full w-full flex flex-col items-start justify-center gap-3 px-6 py-8">
-          <H1 title={title} />
+          <H2 title={title} color="text-amber-500"/>
           <p className="text-lg font-light">
             {desc}
           </p>

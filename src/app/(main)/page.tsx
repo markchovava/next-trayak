@@ -1,9 +1,14 @@
 import Card2 from "../_components/cards/Card2";
+import Card3 from "../_components/cards/Card3";
 import FadeSlideIn from "../_components/FadeSlideIn";
 import Footer from "../_components/Footer";
 import GridLeftTwo from "../_components/grid/GridLeftTwo";
 import GridRightTwo from "../_components/grid/GridRightTwo";
 import { H1, H2, H2Black, H3 } from "../_components/Headings";
+import SvgHandShake from "../_components/icons/SvgHandShake";
+import SvgMap from "../_components/icons/SvgMap";
+
+import SvgTarget from "../_components/icons/SvgTarget";
 import MainHeader from "../_components/MainHeader";
 import { AboutData } from "../_data/sample/AboutData";
 import { CeoData } from "../_data/sample/CeoData";
@@ -40,6 +45,8 @@ export default function Home() {
       </section>
     </FadeSlideIn>
 
+  
+
 
     <>
       <div className="h-[6rem]" />
@@ -51,6 +58,7 @@ export default function Home() {
           </div>
         </section>
       </FadeSlideIn>
+
       <div className="h-[6rem]" />
       <FadeSlideIn slideDirection="left" duration={1500}>
           <GridLeftTwo 
@@ -58,30 +66,48 @@ export default function Home() {
             desc={AboutData.commitment.desc} 
             img={AboutData.commitment.img} />
       </FadeSlideIn>
+
+      <div className="h-[6rem]" />
+      <FadeSlideIn slideDirection="up" duration={1500}>
+        <section className="w-full">
+          <div className="mx-auto w-[92%] grid grid-cols-3 gap-8">
+            {AboutData.approach.map((i, key) => (
+              <Card3 key={key} icon={i.icon} title={i.title} desc={i.desc} />
+            ))}
+          </div>
+        </section>
+      </FadeSlideIn>
+
       <div className="h-[6rem]" />
       <div className='flex flex-col justify-center items-center mb-4'>
           <H1 title="Trayak's sectoral coverage" />
       </div>
+
       <div className="h-[2rem]" />
       <FadeSlideIn slideDirection="right" duration={1500}>
           <GridRightTwo title={ServicesData[0].title} desc={ServicesData[0].desc} img={ServicesData[0].img} />
       </FadeSlideIn>
+
       <div className="h-[6rem]" />
       <FadeSlideIn slideDirection="left" duration={1500}>
           <GridLeftTwo title={ServicesData[1].title} desc={ServicesData[1].desc} img={ServicesData[1].img} />
       </FadeSlideIn>
+
       <div className="h-[6rem]" />
       <FadeSlideIn slideDirection="right" duration={1500}>
           <GridRightTwo title={ServicesData[2].title} desc={ServicesData[2].desc} img={ServicesData[2].img} />
       </FadeSlideIn>
+
       <div className="h-[6rem]" />
       <FadeSlideIn slideDirection="left" duration={1500}>
           <GridLeftTwo title={ServicesData[3].title} desc={ServicesData[3].desc} img={ServicesData[3].img} />
       </FadeSlideIn>
+
       <div className="h-[6rem]" />
       <FadeSlideIn slideDirection="right" duration={1500}>
           <GridRightTwo title={ServicesData[4].title} desc={ServicesData[4].desc} img={ServicesData[4].img} />
       </FadeSlideIn>
+      
     </>
 
     <div className="h-[6rem]" />

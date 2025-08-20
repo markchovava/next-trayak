@@ -1,6 +1,10 @@
+import SvgHandShake from "@/app/_components/icons/SvgHandShake";
+import SvgMap from "@/app/_components/icons/SvgMap";
+import SvgTarget from "@/app/_components/icons/SvgTarget";
+
 export const AboutData = {
-    intro:`We are expert partner in Agriculture, Services, Hotels And Hospitality, Real Estate, 
-    Mining & Telecommunication.`,
+    intro:`We are expert partner in Agriculture, Services, Hotels And Hospitality, 
+    Real Estate, Mining & Telecommunication.`,
     title: "Company Culture",
     desc: `Culture is an essential aspect of any organization. Swetang believes that the 
     workplace must be conducive to shared work, free from abuse, and foster an atmosphere 
@@ -30,5 +34,26 @@ export const AboutData = {
             <p>Providing more than consultancy, we are the field expansion partner.</p>
         </>,
         img: "/assets/img/commit.jpg",
-    }
+    },
+    approach: [
+        {
+            id: 1, 
+            icon: <SvgTarget css="fill-amber-500" />, 
+            title: "1 - Strategy", 
+            desc: "We start with a brand discovery to understand your business expansion goals.",
+        },
+        {
+            id: 2, 
+            icon: <SvgMap css="fill-amber-500 w-[5rem]" />, 
+            title: "2 - Planning", 
+            desc: "We develop your bespoke strategy detailing all the activities that will need to be carried out to meet your goals.",
+        },
+         {
+            id: 3, 
+            icon: <SvgHandShake css="fill-amber-500" />, 
+            title: "3 - Implementation", 
+            desc: "As your local partner, we execute, monitor the progress against the plan to ensure deadlines and goals are met.",
+        },
+    ]
+
 }
