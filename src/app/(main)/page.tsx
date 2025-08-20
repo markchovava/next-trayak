@@ -1,5 +1,7 @@
+import AboutSect1 from "../_components/AboutSect1";
 import Card2 from "../_components/cards/Card2";
 import Card3 from "../_components/cards/Card3";
+import Carousel1 from "../_components/carousels/Carousel1";
 import FadeSlideIn from "../_components/FadeSlideIn";
 import Footer from "../_components/Footer";
 import GridLeftTwo from "../_components/grid/GridLeftTwo";
@@ -9,6 +11,7 @@ import SvgHandShake from "../_components/icons/SvgHandShake";
 import SvgMap from "../_components/icons/SvgMap";
 
 import SvgTarget from "../_components/icons/SvgTarget";
+import Image1 from "../_components/images/Image1";
 import MainHeader from "../_components/MainHeader";
 import { AboutData } from "../_data/sample/AboutData";
 import { CeoData } from "../_data/sample/CeoData";
@@ -27,7 +30,7 @@ export default function Home() {
 
     <FadeSlideIn slideDirection="up" duration={1500}>
       <section className="w-full">
-        <div className="w-[92%] mx-auto pt-8 px-8 pb-10 rounded-2xl overflow-hidden bg-black text-gray-200">
+        <div className="w-[92%] mx-auto pt-8 px-8 pb-10 rounded-2xl overflow-hidden bg-gray-950 text-gray-200">
           <div className="flex items-center justify-center mb-3">
             <h5 className="text-[2.5rem] font-bold text-amber-400">
               {WorksData.title}
@@ -70,7 +73,7 @@ export default function Home() {
       <div className="h-[6rem]" />
       <FadeSlideIn slideDirection="up" duration={1500}>
         <section className="w-full">
-          <div className="mx-auto w-[92%] grid grid-cols-3 gap-8">
+          <div className="mx-auto w-[92%] grid md:grid-cols-3 grid-cols-1 gap-8">
             {AboutData.approach.map((i, key) => (
               <Card3 key={key} icon={i.icon} title={i.title} desc={i.desc} />
             ))}
@@ -78,6 +81,22 @@ export default function Home() {
         </section>
       </FadeSlideIn>
 
+      <div className="h-[6rem]" />
+      <FadeSlideIn slideDirection="up" duration={1500}>
+        <AboutSect1 />
+      </FadeSlideIn>
+
+       <div className="h-[6rem]" />
+      <FadeSlideIn slideDirection="up" duration={1500}>
+        <section className="bg-gray-950 py-[6rem]">
+          <div className="mx-auto w-[80%]">
+            <Carousel1 title="Our Projects" />
+          </div>
+        </section>
+      </FadeSlideIn>
+      
+
+      {/* HEADING */}
       <div className="h-[6rem]" />
       <div className='flex flex-col justify-center items-center mb-4'>
           <H1 title="Trayak's sectoral coverage" />

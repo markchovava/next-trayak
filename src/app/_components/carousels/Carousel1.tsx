@@ -9,8 +9,10 @@ import { GoDotFill, GoDot } from "react-icons/go";
 // Import Swiper styles
 import 'swiper/swiper-bundle.css';
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
-import { H1 } from '../Headings';
+import { H1, H2 } from '../Headings';
 import { ServicesData } from '@/app/_data/sample/ServicesData';
+import { ProjectData } from '@/app/_data/sample/ProjectData';
+import Image1 from '../images/Image1';
 
 
 
@@ -104,23 +106,28 @@ export default function Carousel1({ title }: { title: string }) {
           onSlideChange={handleSlideChange}
           navigation={false}
           pagination={false}
-          className="mb-6"
-        >
-          {ServicesData.map((i, key) => (
-            <SwiperSlide key={key} className='py-4 px-3'>
-              <section className='w-full cursor-pointer group relative h-[25rem] overflow-hidden rounded-2xl drop-shadow hover:drop-shadow-lg'>
-                <div className="mx-auto w-[100%] h-[100%] rounded-2xl overflow-hidden grid lg:grid-cols-2 grid-cols-1 bg-white drop-shadow-lg">
-                    <div className="h-full w-full flex flex-col items-start justify-center gap-3 px-6 py-8">
-                        <H1 title={i.title} />
-                        <p className="text-lg font-light">
-                        {i.desc}
-                        </p>
-                    </div>
-                    <div className="h-full w-full bg-gray-400"></div>
-                    </div>
-              </section>
-            </SwiperSlide>
-          ))}
+          className="mb-6" >
+
+            {ProjectData.map((i, key) => (
+              <SwiperSlide key={key} className='py-4 px-3'>
+                <section className='w-full cursor-pointer group relative h-[25rem] overflow-hidden rounded-2xl drop-shadow hover:drop-shadow-lg'>
+                  <div className="mx-auto w-[100%] h-[100%] rounded-2xl overflow-hidden grid lg:grid-cols-2 grid-cols-1 bg-gray-900 drop-shadow-lg">
+                      <div className="h-full w-full flex flex-col items-start justify-center gap-3 px-6 py-8">
+                          <H2 title={i.name} color="text-gray-200" />
+                          {i.desc &&
+                          <p className="text-lg font-light">
+                          {i.desc}
+                          </p>
+                          }
+                      </div>
+                      <div className="h-full w-full">
+                        <Image1 img={i.img} />
+                      </div>
+                      </div>
+                </section>
+              </SwiperSlide>
+            ))}
+
         </Swiper>
 
         {/* Custom pagination dots */}

@@ -33,7 +33,7 @@ export function H2Black({title} : {title: string}) {
 export function H3({title} : {title: string}) {
     return (
         <>
-        <h1 className="text-xl uppercase text-amber-500 font-medium leading-tight">
+        <h1 className="text-xl text-amber-500 font-medium leading-tight">
           {title}
         </h1>
         </>

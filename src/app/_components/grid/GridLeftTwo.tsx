@@ -20,7 +20,12 @@ export default function GridLeftTwo(
           </p>
         </div>
          <div className="h-full w-full bg-gray-400 overflow-hidden">
-            <Image src={img} width={800} height={400} alt="" className="w-full h-full object-cover" />
+            <Image 
+              src={img} 
+              width={800} 
+              height={400} 
+              alt="" 
+              className="w-full h-full object-cover" />
           </div>
       </div>
     </section>
