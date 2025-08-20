@@ -8,6 +8,7 @@ export default function AboutSect1() {
         <div className="w-[92%] mx-auto grid lg:grid-cols-2 grid-cols-1 gap-8">
         <div className="pb-8">
             <H3 title="Why Africa?" />
+            <div className='h-4' />
             <H2Black title="Opportunities in Africa" />
             <p className="font-light text-xl my-4"> Africa is the fastest-growing region in the world.</p>
             <p className="font-light text-xl mb-4">
@@ -31,7 +32,7 @@ export default function AboutSect1() {
             </div>
             </div>
         </div>
-        <div className="bg-gray-300 rounded-2xl overflow-hidden">
+        <div className="bg-gray-300 rounded-2xl overflow-hidden drop-shadow">
             <Image1 img="/assets/img/07.jpg" />
         </div>
         </div>

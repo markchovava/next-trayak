@@ -133,8 +133,8 @@ export default function Home() {
     <section className='w-full bg-gray-950 pb-[6rem]'>
       <div className='h-[6rem] w-full' />
       <div className='flex flex-col justify-center items-center'>
-          {/* <H3 title="About Swetang Sinha" />
-          <div className="h-[1rem]" /> */}
+        <H3 title="Words from the CEO" />
+          <div className="h-[1rem]" />
           <H1 title="CEO of Trayak Consultancy (Pvt) Ltd" />
       </div>
       <div className="h-[2rem]" />
@@ -144,21 +144,20 @@ export default function Home() {
           </section>
       </FadeSlideIn>
     </section>
+    
+    <section className='w-full bg-gray-50 pb-[6rem]'>
+        <div className='h-[6rem] w-full' />
+        <div className='flex flex-col justify-center items-center'>
+            <H1 title="A different worldview of a changing world." />
+        </div>
+        <div className="h-[2rem]" />
+        <FadeSlideIn slideDirection="left" duration={1500}>
+            <section className='mx-auto w-[70%] text-xl font-light text-gray-950 '>
+                {CeoData.worldView}
+            </section>
+        </FadeSlideIn>
 
-
-  <section className='w-full bg-gray-50 pb-[6rem]'>
-      <div className='h-[6rem] w-full' />
-      <div className='flex flex-col justify-center items-center'>
-          <H1 title="A different worldview of a changing world." />
-      </div>
-      <div className="h-[2rem]" />
-      <FadeSlideIn slideDirection="left" duration={1500}>
-          <section className='mx-auto w-[70%] text-xl font-light text-gray-950 '>
-              {CeoData.worldView}
-          </section>
-      </FadeSlideIn>
-
-  </section>
+    </section>
 
 
 
