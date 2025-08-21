@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
+/* ToastContainer */
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 
 
 export const metadata: Metadata = {
@@ -18,6 +22,19 @@ export default function RootLayout({
       <body
         className={`min-h-screen antialiased`} >
         {children}
+
+         <ToastContainer
+              position="top-right"
+              autoClose={5000}
+              hideProgressBar={false}
+              newestOnTop={false}
+              closeOnClick
+              rtl={false}
+              pauseOnFocusLoss
+              draggable
+              pauseOnHover
+              theme="colored" 
+            />
       </body>
     </html>
   );

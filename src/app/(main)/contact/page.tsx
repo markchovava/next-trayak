@@ -10,6 +10,7 @@ import { FooterLinksData } from '@/app/_data/sample/NavData'
 import React from 'react'
 import { FaLocationDot, FaPhone } from 'react-icons/fa6'
 import { IoMdMail } from 'react-icons/io'
+import ContactForm from './_components/ContactForm'
 
 
 
@@ -50,17 +51,7 @@ export default function page() {
                 </div>
             </div>
             <div className='p-6 bg-white drop-shadow rounded-2xl'>
-                <H4 title='Contact Us' />
-                <div className='h-[1rem]' />
-                <TextInput label='Name' name="name" placeholder="Enter Name..."  />
-                <TextInput label='Email' name="email" placeholder="Enter Email..."  />
-
-                <TextArea label='Message' name="message" placeholder="Enter Message..." />
-
-                <ButtonSecondary
-                    title="Submit" 
-                    css="w-full rounded-xl text-black py-4 w-[10rem]" />
-                
+               <ContactForm />
             </div>
         </div>
     </section>
