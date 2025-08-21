@@ -9,7 +9,7 @@ export default function page() {
         <MainHeaderSecondary
           title='Awards & Media'
           img='/assets/img/media/bg.jpg'
-          intro="We are proud to share the accolades and recognition our work." />
+          intro="We are proud to share the accolades and recognition of our work." />
 
           <MediaList />
 

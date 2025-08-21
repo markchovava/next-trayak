@@ -5,6 +5,7 @@ import MediaModal from "./MediaModal"
 import { MediaData } from "@/app/_data/sample/MediaData"
 import Image1 from "@/app/_components/images/Image1"
 import { FaPlay } from "react-icons/fa"
+import { H1 } from "@/app/_components/Headings"
 
 export default function MediaList() {
     const [isModal, setIsModal] = useState(false)
@@ -25,6 +26,10 @@ export default function MediaList() {
         <>
             <section className='w-full bg-gray-950'>
                 <div className='h-[6rem]' />
+                <div className="mx-auto w-[92%] flex justify-between mb-[3rem]">
+                    <H1 title="Awards & Media" />
+                    <p className="text-gray-400 font-light text-sm mt-4">Click on media to view</p>
+                </div>
                 <div className='mx-auto w-[92%] grid grid-cols-4 gap-8'>
                     {MediaData.map((item, index) => (
                         <button key={index} onClick={() => handleImageClick(index)}>
