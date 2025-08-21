@@ -8,7 +8,7 @@ export default function page() {
     <div>
         <MainHeaderSecondary
           title='Awards & Media'
-          img='/assets/img/banner/02.jpg'
+          img='/assets/img/media/bg.jpg'
           intro="We are proud to share the accolades and recognition our work." />
 
           <MediaList />

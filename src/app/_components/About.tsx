@@ -59,7 +59,7 @@ export default function About() {
     
            <div className="h-[6rem]" />
           <FadeSlideIn slideDirection="up" duration={1500}>
-            <section className="bg-gray-950 py-[6rem]">
+            <section className="bg-gray-950 pt-[2.5rem] pb-[2rem]">
               <div className="mx-auto w-[80%]">
                 <Carousel1 title="" />
               </div>
@@ -101,8 +101,12 @@ export default function About() {
         </>
         <div className="h-[6rem]" />
         <section className='w-full bg-gray-950 pb-[6rem]'>
-          <div className='h-[6rem] w-full' />
+          <div className='h-[4rem] w-full' />
           <div className='flex flex-col justify-center items-center'>
+            <div className="md:w-[30%] w-[50%] rounded-2xl overflow-hidden">
+              <Image1 img="/assets/img/media/ceo.jpg"/>
+              <p className="text-gray-200 font-medium py-4 text-center text-2xl">Swetang Sinha</p>
+            </div>
             <H3 title="Words from the CEO" />
               <div className="h-[1rem]" />
               <H1 title="CEO of Trayak Consultancy (Pvt) Ltd" />
