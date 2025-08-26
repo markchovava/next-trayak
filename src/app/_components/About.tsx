@@ -104,9 +104,11 @@ export default function About() {
           <div className='h-[4rem] w-full' />
           <div className='flex flex-col justify-center items-center'>
             <div className="md:w-[30%] w-[50%] rounded-2xl overflow-hidden">
-              <Image1 img="/assets/img/media/ceo.jpg"/>
-              <p className="text-gray-200 font-medium py-4 text-center text-2xl">Swetang Sinha</p>
+              <Image1 img={CeoData.img} />
             </div>
+              <p className="text-gray-200 font-medium py-4 text-center text-2xl">
+                {CeoData.name}
+              </p>
             <H3 title="Words from the CEO" />
               <div className="h-[1rem]" />
               <H1 title="CEO of Trayak Consultancy (Pvt) Ltd" />

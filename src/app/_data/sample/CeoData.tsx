@@ -1,4 +1,6 @@
 export const CeoData = {
+    img: "/assets/img/media/ceo1.jpg",
+    name: "Swetang Sinha",
     bio: <div className="flex flex-col gap-6">
             <p className="">
             Swetang Sinha has vast experience working in diverse roles that have exposed 
@@ -8,7 +10,7 @@ export const CeoData = {
             he has stepped up to the occasion through the establishment of Trayak to consult for 
             and help businesses build lasting and impactful brands in various economic spaces.  
             </p>
-            <p className="mx-[3rem] italic border-l-3 border-amber-400 pl-4 py-4">
+            <p className="lg:ml-[3rem] ml-[1rem] italic border-l-3 border-amber-400 pl-4 py-4">
                 I believe in the significance of small steps. The little things we all must do 
                 while seeming insignificant, always are the much-needed building blocks required 
                 to build an edifice. So, never undermine the little needed today to create the 
@@ -45,7 +47,7 @@ export const CeoData = {
             To Swetang's dictates, this value creation has got to be anchored in social empowerment of communities, otherwise 
             the business of promoting self-interest to the exclusion of people interest is no business at all. 
         </p>
-        <p className="mx-[2rem] italic border-l-3 border-amber-400 pl-4 py-4">
+        <p className="lg:ml-[3rem] ml-[1rem] italic border-l-3 border-amber-400 lg:pl-4 pl-2 py-4">
             Our approach is different. Our approach draws from the philosophy propounded by Sir Richard Branson in his seminal book, 
             “Screw Business as usual.” There is immense opportunity to do business differently to empower communities - Swetang Sinha
         </p>
