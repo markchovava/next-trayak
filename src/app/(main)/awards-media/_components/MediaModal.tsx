@@ -5,10 +5,11 @@ import React, { useEffect } from 'react'
 import { IoClose } from 'react-icons/io5';
 import { FaChevronRight, FaChevronLeft } from "react-icons/fa";
 import Image1 from '@/app/_components/images/Image1';
+import Link from 'next/link';
 
 const variants = {
     hidden: { opacity: 0 },
-    visible: { 
+    visible: {
         opacity: 1,
         transition: {
             type: 'spring' as const,
@@ -20,6 +21,7 @@ const variants = {
 interface DbDataInterface {
     id: number,
     img: string,
+    href: string
     video: string,
 }
 
@@ -32,13 +34,13 @@ interface MediaModalInterface {
 }
 
 export default function MediaModal({
-    isModal, 
-    setIsModal, 
+    isModal,
+    setIsModal,
     allImages,
     currentIndex,
     setCurrentIndex
 }: MediaModalInterface) {
-   
+
     const handlePrevious = () => {
         if (allImages.length > 0) {
             const newIndex = currentIndex > 0 ? currentIndex - 1 : allImages.length - 1;
@@ -82,7 +84,7 @@ export default function MediaModal({
             document.addEventListener('keydown', handleKeyDown);
             // Prevent body scroll when modal is open
             document.body.style.overflow = 'hidden';
-            
+
             return () => {
                 document.removeEventListener('keydown', handleKeyDown);
                 document.body.style.overflow = 'unset';
@@ -101,31 +103,33 @@ export default function MediaModal({
                     initial='hidden'
                     animate='visible'
                     exit='hidden'
-                    className='w-[100vw] h-[100vh] fixed top-0 left-0 z-[200] overflow-y-auto'
+                    className='w-screen h-screen fixed top-0 left-0 z-200 overflow-y-auto'
                     onClick={handleBackdropClick}
                 >
                     <div className='absolute z-0 top-0 left-0 w-[100%] h-[100%] bg-black opacity-40'></div>
-                    <div className='w-[100%] h-[100%] text-gray-200 absolute z-10 overflow-auto py-[6rem]'>
+                    <div className='w-full h-[100%] text-gray-200 absolute z-10 overflow-auto py-[6rem]'>
                         <div className='w-full h-full flex items-center justify-between px-4'>
                             <section className='w-[10%] flex items-center justify-center'>
                                 {allImages.length > 1 && (
-                                    <button 
+                                    <motion.button
                                         onClick={handlePrevious}
-                                        className='group cursor-pointer p-4 rounded-full hover:bg-black hover:bg-opacity-30 transition-all duration-300'
+                                        className='group cursor-pointer p-4 flex items-center justify-center border border-amber-400 rounded-full hover:bg-black hover:bg-opacity-30 transition-all duration-300'
                                         aria-label="Previous media"
                                     >
                                         <FaChevronLeft className='text-[2rem] text-amber-400 group-hover:-translate-x-1 group-hover:scale-110 ease-in-out duration-300 transition-all' />
-                                    </button>
+                                    </motion.button>
                                 )}
                             </section>
-                            
+
                             <section className='flex-1 max-w-[80%] relative flex items-center justify-center'>
                                 <div className='relative rounded-2xl overflow-hidden bg-gray-100 max-h-[80vh] w-auto'>
                                     {currentMedia.img ? (
                                         // Display image
-                                        <div className='relative h-[80vh] w-auto'>
-                                            <Image1 img={currentMedia.img} />
-                                        </div>
+                                        <Link href={currentMedia.href} target='_blank'>
+                                            <div className='relative h-[80vh] w-auto'>
+                                                <Image1 img={currentMedia.img} />
+                                            </div>
+                                        </Link>
                                     ) : currentMedia.video ? (
                                         // Display video
                                         <div className='relative h-[80vh] w-auto flex items-center justify-center bg-black'>
@@ -145,9 +149,9 @@ export default function MediaModal({
                                                 ) : (
                                                     <div className="text-white text-center">
                                                         <p>Video cannot be displayed</p>
-                                                        <a 
-                                                            href={currentMedia.video} 
-                                                            target="_blank" 
+                                                        <a
+                                                            href={currentMedia.video}
+                                                            target="_blank"
                                                             rel="noopener noreferrer"
                                                             className="text-blue-400 underline"
                                                         >
@@ -163,15 +167,15 @@ export default function MediaModal({
                                             <p className="text-gray-600">No media available</p>
                                         </div>
                                     )}
-                                    
-                                    <button 
-                                        onClick={() => setIsModal(false)} 
+
+                                    <button
+                                        onClick={() => setIsModal(false)}
                                         className='absolute cursor-pointer top-4 right-4 z-10 text-red-600 hover:scale-110 transition-all ease-in-out duration-200 bg-white bg-opacity-80 rounded-full p-2'
                                         aria-label="Close modal"
                                     >
                                         <IoClose className='text-2xl' />
                                     </button>
-                                    
+
                                     {/* Media counter */}
                                     {allImages.length > 1 && (
                                         <div className='absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-black bg-opacity-60 text-white px-3 py-1 rounded-full text-sm'>
@@ -180,16 +184,17 @@ export default function MediaModal({
                                     )}
                                 </div>
                             </section>
-                            
+
                             <section className='w-[10%] flex items-center justify-center'>
                                 {allImages.length > 1 && (
-                                    <button 
+                                    <motion.button
+                                        whileTap={{ scale: 0.9 }}
                                         onClick={handleNext}
-                                        className='group cursor-pointer p-4 rounded-full hover:bg-black hover:bg-opacity-30 transition-all duration-300'
+                                        className='group cursor-pointer p-4 flex items-center justify-center border border-amber-400 rounded-full hover:bg-black hover:bg-opacity-30 transition-all duration-300'
                                         aria-label="Next media"
                                     >
                                         <FaChevronRight className='text-[2rem] text-amber-400 group-hover:translate-x-1 group-hover:scale-110 ease-in-out duration-300 transition-all' />
-                                    </button>
+                                    </motion.button>
                                 )}
                             </section>
                         </div>

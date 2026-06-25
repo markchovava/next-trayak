@@ -4,11 +4,21 @@ const { withNextVideo } = require('next-video/process')
 
 const nextConfig: NextConfig = {
     /* config options here */
-    eslint:{ 
+    eslint: {
         ignoreDuringBuilds: true,
     },
     typescript: {
-      ignoreBuildErrors: true,
+        ignoreBuildErrors: true,
+    },
+    images: {
+        remotePatterns: [
+            {
+                protocol: 'https',
+                hostname: 'img.youtube.com',
+                port: '',
+                pathname: '/vi/**',
+            },
+        ],
     },
 };
 

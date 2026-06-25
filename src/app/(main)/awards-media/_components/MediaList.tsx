@@ -6,6 +6,7 @@ import { MediaData } from "@/app/_data/sample/MediaData"
 import Image1 from "@/app/_components/images/Image1"
 import { FaPlay } from "react-icons/fa"
 import { H1 } from "@/app/_components/Headings"
+import Image from "next/image"
 
 export default function MediaList() {
     const [isModal, setIsModal] = useState(false)
@@ -25,15 +26,15 @@ export default function MediaList() {
     return (
         <>
             <section className='w-full bg-gray-950'>
-                <div className='h-[6rem]' />
-                <div className="mx-auto w-[92%] flex justify-between mb-[3rem]">
+                <div className='h-24' />
+                <div className="mx-auto w-[92%] flex justify-between mb-12">
                     <H1 title="Awards & Media" />
                     <p className="text-gray-400 font-light text-sm mt-4">Click on media to view</p>
                 </div>
                 <div className='mx-auto w-[92%] grid grid-cols-4 gap-8'>
                     {MediaData.map((item, index) => (
                         <button key={index} onClick={() => handleImageClick(index)}>
-                            <div className='w-full aspect-[4/3] bg-gray-300 drop-shadow rounded-2xl overflow-hidden relative'>
+                            <div className='w-full aspect-4/3 bg-gray-300 drop-shadow rounded-2xl overflow-hidden relative'>
                                 {item.img ? (
                                     // Display image
                                     <Image1 img={item.img} />
@@ -44,9 +45,11 @@ export default function MediaList() {
                                             const videoId = getYouTubeVideoId(item.video);
                                             return videoId ? (
                                                 <>
-                                                    <img 
+                                                    <Image
                                                         src={`https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`}
                                                         alt="Video thumbnail"
+                                                        width={600}
+                                                        height={450}
                                                         className="w-full h-full object-cover"
                                                     />
                                                     <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30">
@@ -70,12 +73,12 @@ export default function MediaList() {
                         </button>
                     ))}
                 </div>
-                <div className='h-[6rem]' />
-            </section> 
+                <div className='h-24' />
+            </section>
 
-            <MediaModal 
-                isModal={isModal} 
-                setIsModal={setIsModal} 
+            <MediaModal
+                isModal={isModal}
+                setIsModal={setIsModal}
                 allImages={MediaData}
                 currentIndex={currentIndex}
                 setCurrentIndex={setCurrentIndex}
